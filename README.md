@@ -1,60 +1,96 @@
-# GalleyWeb (加密货币资讯与多媒体展示平台)
+# GalleyWeb
 
-## 📖 项目简介
+一个以加密货币资讯、多媒体内容和博客展示为主题的静态前端课程项目作品集。  
+A static front-end course project portfolio focused on cryptocurrency content, gallery pages, media pages, and blog-style layouts.
 
-本项目（Kyrie's First Dynamic Website）是一个基于 HTML/CSS/JavaScript 构建的响应式前端网站。最初作为《Web应用程序开发》课程的 Project 1 进行开发。网站以加密货币（Cryptocurrency）为主题，详细介绍了比特币的历史与发展，同时集成了多媒体画廊（图片、音频、视频）和博客文章展示功能。
+Live Demo: [chengyuanzhu11.github.io/galleyweb](https://chengyuanzhu11.github.io/galleyweb/)
 
-## ✨ 主要特性 (Features)
+## Overview
 
-* **多级下拉导航菜单**：清晰的分类导航，支持访问游戏、体育、动物及加密货币图库，以及音视频专区和博客。
-* **动态图片轮播图 (Nivo Slider)**：首页集成了 jQuery Nivo Slider 插件，实现具有平滑过渡效果的宽屏图片轮播。
-* **富文本内容排版**：采用经典的“主内容区 + 侧边栏 (Sidebar)”的自适应两栏布局。
-* **多媒体集成**：预留了视频 (Video) 和音频 (Audio) 播放的专属页面模块。
-* **UI 与图标组件**：全面集成 Font Awesome 4.7.0 图标库，用于呈现精美的社交媒体链接（Twitter, Instagram, YouTube, Facebook）。
-* **多主题样式支持**：CSS 架构中包含了 `dark.css`、`light.css`、`default.css` 等不同风格的样式表基座。
+GalleyWeb 是一个基于 HTML、CSS 和 JavaScript 构建的静态网站项目，最初完成于 `Web Application Development` 课程实践阶段。项目围绕加密货币主题组织内容，在同一个站点中整合了首页轮播、文章阅读、图片分类、多媒体页面以及基础信息页面。
 
-## 🛠️ 技术栈 (Tech Stack)
+这个仓库的定位是课程项目作品集展示，重点在于呈现前端页面组织、静态站点结构和基础交互效果，而不是通用型产品模板或生产环境项目。
 
-* **前端语言**: HTML5, CSS3
-* **脚本逻辑**: JavaScript, jQuery (v1.7.1)
-* **第三方插件**:
-* [Nivo Slider](https://themeisle.com/plugins/nivo-slider/) (图片轮播)
-* [Font Awesome 4.7.0](https://fontawesome.com/v4.7.0/) (矢量图标库)
+## Features
 
+- 多级导航菜单，覆盖首页、图库、音频、视频、博客、联系和关于页面。
+- 首页使用 jQuery Nivo Slider 实现轮播展示，突出加密货币主题视觉内容。
+- 采用经典的内容区加侧边栏布局，用于承载文章、推荐列表和辅助信息模块。
+- 包含图片、音频、视频等多媒体展示页面，适合课程项目作品集场景。
+- 集成 Font Awesome 4.7.0 图标资源，用于社交入口与界面装饰。
+- 站点使用纯静态资源组织，适合直接部署到 GitHub Pages。
 
+## Tech Stack
 
-## 📂 核心目录与文件结构
+- HTML5
+- CSS3
+- JavaScript
+- jQuery 1.7.1
+- [Nivo Slider](https://themeisle.com/plugins/nivo-slider/)
+- [Font Awesome 4.7.0](https://fontawesome.com/v4.7.0/)
+
+## Project Structure
 
 ```text
 galleyweb/
-├── index.html            # 网站首页（加密货币历史、发展与轮播图）
-├── about.html            # 关于我们页面
-├── contact.html          # 联系方式页面
-├── item1~4.html          # 图库分类展示页面
-├── song1~4.html          # 音频展示页面
-├── video1~4.html         # 视频展示页面
-├── Blog1~4.html          # 博客文章页面
-├── css/                  # 样式表目录
-│   ├── style.css         # 全局主样式表
-│   ├── nivo-slider.css   # 轮播图核心样式
-│   └── light/dark/default/ # 轮播图及其他主题样式
-├── js/                   # JavaScript 脚本目录
+├── index.html
+├── about.html
+├── contact.html
+├── item.html
+├── item1.html ~ item4.html
+├── Blog1.html ~ Blog4.html
+├── article1.html ~ article4.html
+├── song1.html ~ song4.html
+├── video1.html ~ video4.html
+├── post.html
+├── style.css
+├── css/
+│   ├── nivo-slider.css
+│   ├── bar/
+│   ├── dark/
+│   ├── default/
+│   └── light/
+├── js/
 │   ├── jquery-1.7.1.min.js
 │   └── jquery.nivo.slider.pack.js
-├── images/               # 网站配图、轮播图素材及 Logo
-└── font-awesome-4.7.0/   # 本地化的 Font Awesome 字体及样式文件
-
+├── images/
+├── font-awesome-4.7.0/
+└── docs/
+    └── homepage-preview.png
 ```
 
-## 🚀 快速开始 (Getting Started)
+## Local Preview
 
-本项目为纯静态前端项目，无需配置复杂的服务器环境或数据库。
+这是一个纯静态项目，不依赖后端服务或数据库。
 
-1. 将项目代码克隆或下载到本地。
+1. 克隆或下载仓库。
 2. 进入项目根目录。
-3. 双击运行 `index.html` 文件，或将其拖拽至任何现代浏览器（Chrome, Firefox, Edge, Safari）中即可预览完整效果。
+3. 直接用浏览器打开 `index.html`，或使用任意本地静态服务器预览。
 
-## 📜 版权与致谢 (Credits)
+例如，也可以使用 Python 在本地启动一个简单预览服务：
 
-* **Copyright**: © 2023 Web Application Development (Project 1) -- All Right Reserved.
-* 本项目为前端静态网页演示，部分文章内容（如比特币历史）及配图源自互联网开源资料，仅供学术项目展示与学习使用。
+```bash
+python -m http.server 8000
+```
+
+然后访问 `http://127.0.0.1:8000/`。
+
+## Screenshots
+
+首页预览：
+
+![GalleyWeb homepage preview](./docs/homepage-preview.png)
+
+## Project Background
+
+- 项目类型：静态前端课程项目 / portfolio showcase
+- 初始用途：`Web Application Development` 课程作业
+- 主题方向：Cryptocurrency、gallery pages、blog content、media display
+- 当前仓库目标：以更标准的 GitHub 项目形式展示源码、说明文档和在线预览入口
+
+## Credits & Asset Notice
+
+- 本仓库中的代码主要用于课程项目展示与个人作品集整理。
+- 部分文章内容、图片、音频或视频素材来源于互联网或第三方资源，仅用于学习与展示目的。
+- 如需将其中素材用于二次分发、商业使用或其他公开项目，请先自行确认对应版权与授权状态。
+- 暂未添加开源许可证文件，原因是仓库中包含混合来源的媒体资源，授权边界需要单独确认。
